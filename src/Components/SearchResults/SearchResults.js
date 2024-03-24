@@ -1,14 +1,17 @@
 import React from "react";
-import styles from "./SearchResults.module.css"
-import Tracklist from "../Tracklist/Tracklist"
+import styles from "./SearchResults.module.css";
+import Tracklist from "../Tracklist/Tracklist";
 
-function SearchResults (props) {
-    return (
-        <div className={styles.SearchResults}>
-        {/* <!-- Add a TrackList component --> */}
-        <Tracklist userSearchResults={props.userSearchResults}/>
-      </div>
-        );
+function SearchResults(props) {
+  return (
+    <div className={styles.SearchResults}>
+      {/* <!-- Add a Tracklist component --> */}
+      <Tracklist
+        userSearchResults={props.userSearchResults}
+        isRemoval={false}
+      />
+    </div>
+  );
 }
 
 export default SearchResults;

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import styles from "./App.module.css";
-import SearchResults from "../SearchResults/SearchResults"
+import SearchResults from "../SearchResults/SearchResults";
 
 function App () {
   const [searchResults, setSearchResults] = useState([
@@ -27,6 +27,7 @@ function App () {
       
       <div className={styles['App-playlist']}>
         {/* <!-- Add a SearchResults component --> */}
+        <SearchResults userSearchResults={searchResults} />
         {/* <!-- Add a Playlist component --> */}
       </div>
     </div>
